@@ -38,7 +38,7 @@ html,body{
 }
 
 #heading {
-    margin-top: 35px;
+    margin-top: 25px;
 }
 
 #heading h1 {
@@ -70,7 +70,7 @@ html,body{
 }
 
 .split-line-content {
-    margin-top: 130px;
+    margin-top: 140px;
     padding-right: 40px;
 }
 
@@ -80,4 +80,41 @@ html,body{
     text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 1.5; 
+}
+
+#hero-footer {
+    width: 100%;
+    position: absolute;
+    bottom: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.6vw;
+    margin-bottom: 10px;
+}
+
+#hero-footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2vw;
+    font-weight: 500;
+    text-transform: uppercase;
+
+}
+
+#hero-footer  #iconset {
+    display: flex;
+    gap: 4px;
+}
+
+#hero-footer .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #888;
+    color: black;
+    font-weight: bold;
 }
