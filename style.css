@@ -68,3 +68,16 @@ html,body{
     font-weight: 600;
     letter-spacing: 1px;
 }
+
+.split-line-content {
+    margin-top: 130px;
+    padding-right: 40px;
+}
+
+.split-line-content h5 {
+    font-size: 1.1vw;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.5; 
+}
