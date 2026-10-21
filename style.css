@@ -8,6 +8,7 @@
 html,body{
     width: 100%;
     height: 100%;
+    background-color: black;
 }
 
 #main {
@@ -17,7 +18,6 @@ html,body{
 #hero {
     width: 100%;
     height: 100vh;
-    background-color: black;
     color: #fff;
 }
 
@@ -123,20 +123,27 @@ html,body{
     color: #fff;
     padding-left: 2.5vw;
     padding-right: 2vw;
-    background-color: black;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding-top: 180px;
 }
 
 .elem {
     width: 88%;
     border-top: 1px solid #888;
-    padding: 2vw 1vw;
+    padding: 3.5vw .2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .elem h1 {
     text-transform: uppercase;
-    font-size: 5rem;
+    font-size: 6.5vw;
     opacity: .7;
+    font-weight: 800;
+}
+
+.last {
+    border-bottom: 1px solid #888;
 }
