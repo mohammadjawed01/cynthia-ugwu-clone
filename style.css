@@ -186,6 +186,7 @@ html,body{
 #abouttext p {
     line-height: 1.7;
     margin-bottom: 30px;
+    font-size: 15.5px;
 }
 
 #abouttext a {
