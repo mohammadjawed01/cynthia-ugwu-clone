@@ -155,3 +155,34 @@ html,body{
     height: 140%;
     display: none;
 }
+
+#about {
+    margin-top: 16%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: #fff;
+    padding: 10vw 10vw;
+    padding-left: 35vw;
+}
+
+#about img {
+    width: 200px;
+}
+
+#abouttext {
+    width: 25rem;
+}   
+
+#abouttext h5 {
+    text-transform: uppercase;
+    opacity: .6;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+#abouttext p {
+
+}
