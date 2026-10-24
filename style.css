@@ -197,3 +197,29 @@ html,body{
     text-decoration: none;
     font-size: 14px;
 }
+
+#subscribe {
+    color: #fff;
+    background-color: black;
+    padding: 20px 30px;
+    padding-bottom: 10vw;
+    line-height: 1.4;
+}
+
+#subscribe h5 {
+    text-transform: uppercase;
+    opacity: .6;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+
+#subscribe h3 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+
+#subscribe i {
+    padding-left: 10px;
+}
