@@ -223,3 +223,37 @@ html,body{
 #subscribe i {
     padding-left: 10px;
 }
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 30px;
+    color: #fff;
+    padding-bottom: 2.5vw;
+}
+
+.footerleft {
+    display: flex;
+    gap: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.footerleft a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footerright {
+    display: flex;
+    gap: 45px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.footerright a {
+    color: #fff;
+    text-decoration: none;
+}
