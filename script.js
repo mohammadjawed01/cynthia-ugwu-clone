@@ -11,6 +11,12 @@ function firstPageAnim(){
     duration: 1,
     ease: Expo.easeInOut
   })
+  .to(".boundingelem", {
+    y: 0,
+    duration: 2,
+    ease: Expo.easeInOut,
+    stagger: .2
+  })
 }
 
 function circlefollowmotion(){
