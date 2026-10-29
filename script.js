@@ -34,9 +34,29 @@ function firstPageAnim(){
   })
 }
 
-function circlefollowmotion(){
+function mousefollowanimation(){
+  let xscale = 1;
+  let yscale = 1;
+
+  let xprev = 0;
+  let yprev = 0;
+
+  window.addEventListener('mousemove', function(e){
+    xscale = gsap.utils.clamp(.8,1.2, e.clientX - xprev);
+    yscale = gsap.utils.clamp(.8,1.2, e.clientY - yprev);
+
+    xprev = e.clientX;
+    yprev = e.clientY;
+
+    circlefollowmotion(xscale, yscale);
+  })
+}
+
+mousefollowanimation();
+
+function circlefollowmotion(xscale, yscale){
   window.addEventListener("mousemove",function (e){
-    this.document.querySelector("#minicircle").style.transform = `translate(${e.clientX}px, ${e.clientY}px)`
+    this.document.querySelector("#minicircle").style.transform = `translate(${e.clientX}px, ${e.clientY}px) scale(${xscale}, ${yscale})`;
   })
 }
 
