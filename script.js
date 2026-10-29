@@ -34,7 +34,10 @@ function firstPageAnim(){
   })
 }
 
+
+let timeout;
 function mousefollowanimation(){
+  clearTimeout(timeout);
   let xscale = 1;
   let yscale = 1;
 
@@ -49,9 +52,12 @@ function mousefollowanimation(){
     yprev = e.clientY;
 
     circlefollowmotion(xscale, yscale);
+
+    timeout = setTimeout(function(){
+      this.document.querySelector("#minicircle").style.transform = `translate(${e.clientX}px, ${e.clientY}px) scale(1,1)`;
+    },100)
   })
 }
-
 mousefollowanimation();
 
 function circlefollowmotion(xscale, yscale){
