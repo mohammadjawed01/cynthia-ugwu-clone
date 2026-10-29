@@ -13,17 +13,24 @@ function firstPageAnim(){
   })
   .to(".boundingelem", {
     y: 0,
-    duration: 1.5,
+    duration: 2,
     ease: Expo.easeInOut,
     // stagger: .2
   })
   .from(".boundingelemdown", {
-    y: '-8',
+    y: '-10',
     opacity: 0,
-    duration: .8,
-    delay: 0,
+    duration: 1,
+    delay: -1,
     ease: Expo.easeInOut,
     stagger: .2
+  })
+  .from("#hero-footer", {
+    y: 5,
+    opacity: 0,
+    duration: 1.5,
+    delay: -1,
+    ease: Expo.easeInOut,
   })
 }
 
