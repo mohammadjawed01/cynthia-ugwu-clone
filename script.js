@@ -13,7 +13,15 @@ function firstPageAnim(){
   })
   .to(".boundingelem", {
     y: 0,
-    duration: 2,
+    duration: 1.5,
+    ease: Expo.easeInOut,
+    // stagger: .2
+  })
+  .from(".boundingelemdown", {
+    y: '-8',
+    opacity: 0,
+    duration: .8,
+    delay: 0,
     ease: Expo.easeInOut,
     stagger: .2
   })
