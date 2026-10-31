@@ -71,6 +71,11 @@ firstPageAnim();
 
 document.querySelectorAll(".elem").forEach(function(elem){
   elem.addEventListener("mouseover", function(e){
-    elem.querySelector("img").style.display = "initial";
+    console.log(e.clientY - elem.getBoundingClientRect().top);
+
+    gsap.to(elem.querySelector("img"),{
+      opacity: 1,
+      ease: Power1,
+    })
   })
 })
