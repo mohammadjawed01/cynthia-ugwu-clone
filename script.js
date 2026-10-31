@@ -68,3 +68,9 @@ function circlefollowmotion(xscale, yscale){
 
 circlefollowmotion();
 firstPageAnim(); 
+
+document.querySelectorAll(".elem").forEach(function(elem){
+  elem.addEventListener("mouseover", function(e){
+    elem.querySelector("img").style.display = "initial";
+  })
+})
