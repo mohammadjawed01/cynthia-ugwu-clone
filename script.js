@@ -71,11 +71,13 @@ firstPageAnim();
 
 document.querySelectorAll(".elem").forEach(function(elem){
   elem.addEventListener("mouseover", function(e){
-    console.log(e.clientY - elem.getBoundingClientRect().top);
+    let diff = e.clientY - elem.getBoundingClientRect().top;
 
     gsap.to(elem.querySelector("img"),{
       opacity: 1,
       ease: Power1,
+      top: diff,
+      left: e.clientX
     })
   })
 })
