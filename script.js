@@ -73,6 +73,14 @@ document.querySelectorAll(".elem").forEach(function (elem) {
   let rotate = 0;
   let diffrot = 0;
 
+  elem.addEventListener("mouseleave", function (e) {
+    gsap.to(elem.querySelector("img"), {
+      opacity: 0,
+      ease: Power3,
+      duration: 0.5
+    });
+  });
+
   elem.addEventListener("mousemove", function (e) {
     let diff = e.clientY - elem.getBoundingClientRect().top;
 
