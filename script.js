@@ -70,14 +70,21 @@ circlefollowmotion();
 firstPageAnim();
 
 document.querySelectorAll(".elem").forEach(function (elem) {
+  let rotate = 0;
+  let diffrot = 0;
+
   elem.addEventListener("mousemove", function (e) {
     let diff = e.clientY - elem.getBoundingClientRect().top;
 
+    diffrot = e.clientX - rotate;
+    rotate = e.clientX;
+    
     gsap.to(elem.querySelector("img"), {
       opacity: 1,
-      ease: Power1,
+      ease: Power3,
       top: diff,
-      left: e.clientX
-    })
-  })
-})
+      left: e.clientX, 
+      rotate: gsap.utils.clamp(-20,20, diffrot * 0.5) 
+    });
+  });
+});

@@ -186,7 +186,7 @@ html,body{
     width: auto;
     /* object-fit: cover; */
     pointer-events: none;
-    /* transform: translate(-50%, -50%);   */
+    transform: translate(-50%, -50%);  
     /* overflow: hidden;  */
 }
 
