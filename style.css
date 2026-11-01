@@ -162,6 +162,7 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* overflow: hidden; */
 }
 
 .elem h1 {
@@ -178,8 +179,15 @@ html,body{
 .elem img {
     z-index: 999;
     position: absolute;
+    top: 0;
+    left: 0;
     height: 140%;
     opacity: 0;
+    width: auto;
+    /* object-fit: cover; */
+    pointer-events: none;
+    /* transform: translate(-50%, -50%);   */
+    /* overflow: hidden;  */
 }
 
 #about {
